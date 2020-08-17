@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 
 import string
@@ -41,11 +40,13 @@ def banner():
 def proc(opc):
     if (opc=="1"):
         print("\n")
+        banner()
+        print("\n")
         print("          [    Digits   ]")
         chars=string.digits
         print("\n")
         ch_size = input("Characters size: ")
-        num_str = input("Number of strings:    ")
+        num_str = input("Number of strings: ")
         print("\n")
 
 
@@ -57,11 +58,13 @@ def proc(opc):
 
     if (opc=="2"):
         print("\n")
+        banner()
+        print("\n")
         print("          [    Lowercase   ]")
         print("\n")
         chars=string.ascii_lowercase
-        ch_size = input("Characters size:      ")
-        num_str = input("Number of strings:    ")
+        ch_size = input("Characters size: ")
+        num_str = input("Number of strings: ")
         print("\n")
         print("[      --       ]")
         print("\n")
@@ -71,11 +74,13 @@ def proc(opc):
 
     if (opc=="3"):
         print("\n")
+        banner()
+        print("\n")
         print("          [    Uppercase   ]")
         print("\n")
         chars=string.ascii_uppercase
-        ch_size = input("Characters size:      ")
-        num_str = input("Number of strings:    ")
+        ch_size = input("Characters size: ")
+        num_str = input("Number of strings: ")
         print("\n")
         print("[      --       ]")
         print("\n")
@@ -85,11 +90,13 @@ def proc(opc):
 
     if (opc=="4"):
         print("\n")
+        banner()
+        print("\n")
         print("          [    Digits - Lowercase   ]")
         print("\n")
         chars=(string.digits+string.ascii_lowercase)
-        ch_size = input("Characters size:      ")
-        num_str = input("Number of strings:    ")
+        ch_size = input("Characters size: ")
+        num_str = input("Number of strings: ")
         print("\n")
         print("[      --       ]")
         print("\n")
@@ -99,11 +106,13 @@ def proc(opc):
 
     if (opc=="5"):
         print("\n")
+        banner()
+        print("\n")
         print("          [    Digits - Uppercase   ]")
         print("\n")
         chars=(string.digits+string.ascii_uppercase)
-        ch_size = input("Characters size:      ")
-        num_str = input("Number of strings:    ")
+        ch_size = input("Characters size: ")
+        num_str = input("Number of strings: ")
         print("\n")
         print("[      --       ]")
         print("\n")
@@ -113,11 +122,13 @@ def proc(opc):
 
     if (opc=="6"):
         print("\n")
+        banner()
+        print("\n")
         print("          [    Lowercase - Uppercase   ]")
         print("\n")
         chars=(string.ascii_lowercase+string.ascii_uppercase)
-        ch_size = input("Characters size:      ")
-        num_str = input("Numbers of strings:    ")
+        ch_size = input("Characters size: ")
+        num_str = input("Numbers of strings: ")
         print("\n")
         print("[      --       ]")
         print("\n")
@@ -127,11 +138,13 @@ def proc(opc):
 
     if (opc=="7"):
         print("\n")
+        banner()
+        print("\n")
         print("          [    Digits - Lowercase - Uppercase   ]")
         print("\n")
         chars=(string.digits+string.ascii_lowercase+string.ascii_uppercase)
-        ch_size = input("Characters size:      ")
-        num_str = input("Number of strings:    ")
+        ch_size = input("Characters size: ")
+        num_str = input("Number of strings: ")
         print("\n")
         print("[      --       ]")
         print("\n")
@@ -140,6 +153,8 @@ def proc(opc):
             print(randomizer(ch_size, chars))
 
     if (opc=="8"):
+        print("\n")
+        banner()
         print("\n")
         print("                         [    Static word    ]")
         print("")
@@ -192,3 +207,4 @@ while True:
     except:
         help()
         break
+
